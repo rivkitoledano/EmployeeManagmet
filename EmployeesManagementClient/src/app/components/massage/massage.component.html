@@ -1,0 +1,7 @@
+
+<mat-dialog-content *ngIf="message">{{message}}
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button mat-dialog-close (click)="onCancelClick()"> No</button>
+    <button mat-button mat-dialog-close cdkFocusInitial (click)="onConfirmClick()">Ok</button>
+  </mat-dialog-actions>

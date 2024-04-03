@@ -1,0 +1,61 @@
+<mat-toolbar class="topbar">
+   
+    <span>Employee Managment</span>
+    <span class="example-spacer"></span>
+    <div class="searchbar">
+        <input class="search_input" type="text" name="" placeholder="Search..." (keyup)="applyFilter($event)" >
+         <mat-icon  class="search_icon">search</mat-icon>
+      </div>
+      <button mat-icon-button color="example-icon" (click)="openAddEmployeeDialog()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+          </svg>    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="downloadExcel()">
+      <mat-icon>download </mat-icon>
+    </button>
+   
+</mat-toolbar>
+
+<mat-table  [dataSource]="employees">
+
+
+    <!-- First Name Column -->
+    <ng-container matColumnDef="firstName">
+        <mat-header-cell *matHeaderCellDef> First Name </mat-header-cell>
+        <mat-cell *matCellDef="let employee"> {{employee.firstName}} </mat-cell>
+    </ng-container>
+
+    <!-- Last Name Column -->
+    <ng-container matColumnDef="lastName">
+        <mat-header-cell *matHeaderCellDef> Last Name </mat-header-cell>
+        <mat-cell *matCellDef="let employee"> {{employee.lastName}} </mat-cell>
+    </ng-container>
+
+    <!-- Identity Column -->
+    <ng-container matColumnDef="identity">
+        <mat-header-cell *matHeaderCellDef> Identity </mat-header-cell>
+        <mat-cell *matCellDef="let employee"> {{employee.identity}} </mat-cell>
+    </ng-container>
+
+    <!-- Entry Date Column -->
+    <ng-container matColumnDef="entryDate">
+        <mat-header-cell *matHeaderCellDef> Entry Date </mat-header-cell>
+        <mat-cell *matCellDef="let employee"> {{employee.entryDate | date}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+        <mat-cell *matCellDef="let employee">
+            <button mat-icon-button (click)="editEmployee(employee)" class="button">
+                <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button (click)="deleteEmployee(employee)" class="button">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </mat-cell>
+    </ng-container>
+    
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

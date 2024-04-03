@@ -1,0 +1,64 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+  }
+  
+  .form-row {
+width: 80%;
+margin: auto;
+}
+.mat-mdc-text-field-wrapper {
+    width: 180% !important;
+}
+.mat-mdc-form-field-infix{
+    width: 350px !important;
+}
+.dialog-title {
+    padding-top: 4%;
+    font-size: 20px;
+    margin: auto;
+  }
+  
+  .dialog-content {
+    padding: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field {
+    width: 100%;
+  }
+  
+  mat-select {
+    width: 100%;
+  }
+  
+  .mat-option {
+    padding: 8px 0;
+  }
+  
+  .dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+ 
+  .btn-group{
+    width: 75%;
+    margin: auto;
+  }
+  .dialog-content {
+    max-height: 570px; /* גובה מקסימלי עבור התוכן */
+    overflow-y: auto; /* גלילה בציר Y */
+  }

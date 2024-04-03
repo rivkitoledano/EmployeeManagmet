@@ -1,0 +1,60 @@
+<mat-toolbar class="topbar">
+   
+  <span class="headText">Edit Employee</span>
+  <span class="example-spacer"></span>
+
+     <button mat-icon-button color="example-icon" (click)="return()" class="button">
+      <mat-icon>backspace </mat-icon>
+     </button>
+</mat-toolbar>
+<div class="d-flex wrap" >
+  <div class="flex-son p-6">
+    <app-position-employee-table  [employeeId]="this.route.snapshot.params['id']"></app-position-employee-table>
+
+  </div>
+    <form *ngIf="updateEmployee" [formGroup]="editEmployeeForm" class="form p-6">
+    <div class="form-row">
+      <mat-form-field class="form-field">
+        <input matInput placeholder="First Name" formControlName="firstName">
+      </mat-form-field>
+    </div>
+    <div class="form-row">
+      <mat-form-field class="form-field">
+        <input matInput placeholder="Last Name" formControlName="lastName">
+      </mat-form-field>
+    </div>
+    <div class="form-row">
+      <mat-form-field class="form-field">
+        <input matInput placeholder="Identity" formControlName="identity">
+      </mat-form-field>
+    </div>
+    <div class="form-row">
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker1" formControlName="birthDate" placeholder="Choose a birth date">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+      </div>
+      <div class="form-row">
+        <mat-form-field class="form-field">
+          <mat-select placeholder="Gender" formControlName="gender">
+            <mat-option [value]="0">Male</mat-option>
+            <mat-option [value]="1">Female</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    <div class="form-row">
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker2" formControlName="entryDate" placeholder="Choose an entry date">
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+          </mat-form-field>
+      </div>
+      <div class="btn-group" position="group" aria-label="Default button group">
+        <button type="button" class="btn btn-outline-dark" (click)="close()">Cancel</button>
+        <button type="button" class="btn btn-outline-dark" (click)="save()" [disabled]="!editEmployeeForm.valid">Save</button>
+      </div>
+  </form>
+
+  
+</div>
