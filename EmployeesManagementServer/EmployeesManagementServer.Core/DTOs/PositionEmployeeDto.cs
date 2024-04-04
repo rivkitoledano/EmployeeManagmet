@@ -10,7 +10,6 @@ namespace EmployeesManagementServer.Core.DTOs
     public class PositionEmployeeDto
     {
         public int EmployeeId { get; set; }
-        public EmployeeDto Employee { get; set; }
 
         public int PositionId { get; set; }
         public PositionDto Position { get; set; }

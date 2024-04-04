@@ -102,19 +102,11 @@ namespace EmployeesManagementServer.Data.Migrations
 
             modelBuilder.Entity("EmployeesManagementServer.Core.Models.PositionEmployee", b =>
                 {
-                    b.HasOne("EmployeesManagementServer.Core.Models.Employee", "Employee")
-                        .WithMany()
-                        .HasForeignKey("EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("EmployeesManagementServer.Core.Models.Position", "Position")
                         .WithMany()
                         .HasForeignKey("PositionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Employee");
 
                     b.Navigation("Position");
                 });

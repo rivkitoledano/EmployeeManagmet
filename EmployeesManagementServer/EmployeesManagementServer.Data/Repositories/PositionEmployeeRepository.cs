@@ -70,7 +70,7 @@ namespace EmployeesManagementServer.Data.Repositories
          }
         public async Task<IEnumerable<PositionEmployee>> GetEmployeePositionsAsync(int employeeId)
         {
-            return await _context.PositionsEmployee.Where(e => e.EmployeeId == employeeId&&e.StatusActive).Where(ep=>ep.StatusActive).Include(ep=>ep.Position).Include(ep=>ep.Employee).ToListAsync();
+            return await _context.PositionsEmployee.Where(e => e.EmployeeId == employeeId&&e.StatusActive).Where(ep=>ep.StatusActive).Include(ep=>ep.Position).ToListAsync();
         }
 
         public async Task<PositionEmployee> GetEmployeePositionsByIdAsync(int employeeId, int positionId)

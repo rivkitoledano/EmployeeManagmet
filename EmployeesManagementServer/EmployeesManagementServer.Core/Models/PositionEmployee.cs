@@ -12,7 +12,6 @@ namespace EmployeesManagementServer.Core.Models
     public class PositionEmployee
     {
         public int EmployeeId { get; set; }
-        public Employee Employee { get; set; }
         public int PositionId { get; set; }
         public Position Position { get; set; }
         public DateTime EntryDate { get; set; }

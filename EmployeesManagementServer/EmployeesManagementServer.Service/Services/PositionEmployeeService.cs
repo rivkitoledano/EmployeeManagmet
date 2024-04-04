@@ -18,12 +18,12 @@ namespace EmployeesManagementServer.Service.Services
             _positionEmployeeRepository = positionEmployeeRepository;
             _employeeRepository = employeeRepository;
         }
-        public async Task<PositionEmployee> AddPositionToEmployeeAsync(int EmployeeId, PositionEmployee positionEmployee)
+        public async Task<PositionEmployee> AddPositionToEmployeeAsync(int employeeId, PositionEmployee positionEmployee)
         {
-            var employee=await _employeeRepository.GetEmployeeByIdAsync(EmployeeId);
+            var employee=await _employeeRepository.GetEmployeeByIdAsync(employeeId);
             if (positionEmployee.EntryDate < employee.EntryDate)
                 return null;
-            positionEmployee.EmployeeId = EmployeeId;
+            positionEmployee.EmployeeId = employeeId;
             return await _positionEmployeeRepository.AddPositionToEmployeeAsync(positionEmployee);
         }
         public async Task<bool> DeletePositionOfEmployeeAsync(int employeeId, int positionId)
@@ -36,7 +36,10 @@ namespace EmployeesManagementServer.Service.Services
         }
         public async Task<PositionEmployee> UpdatePositionToEmployeeAsync(int employeeId, int positionId, PositionEmployee positionEmployee)
         {
-         return await  _positionEmployeeRepository.UpdatePositionToEmployeeAsync(employeeId, positionId, positionEmployee);
+            var employee = await _employeeRepository.GetEmployeeByIdAsync(employeeId);
+            if (positionEmployee.EntryDate < employee.EntryDate)
+                return null;
+            return await  _positionEmployeeRepository.UpdatePositionToEmployeeAsync(employeeId, positionId, positionEmployee);
         }
       public   async Task<PositionEmployee> GetEmployeePositionsByIdAsync(int employeeId, int positionId)
         {
