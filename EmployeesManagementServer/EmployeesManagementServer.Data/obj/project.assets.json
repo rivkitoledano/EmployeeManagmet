@@ -4417,11 +4417,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user1\\Documents\\רבקי למודים\\.net core\\endCouese\\EmployeesManagementServer\\EmployeesManagementServer.Data\\EmployeesManagementServer.Data.csproj",
+      "projectUniqueName": "C:\\Users\\user1\\Desktop\\EmployeeManagmet\\EmployeesManagementServer\\EmployeesManagementServer.Data\\EmployeesManagementServer.Data.csproj",
       "projectName": "EmployeesManagementServer.Data",
-      "projectPath": "C:\\Users\\user1\\Documents\\רבקי למודים\\.net core\\endCouese\\EmployeesManagementServer\\EmployeesManagementServer.Data\\EmployeesManagementServer.Data.csproj",
+      "projectPath": "C:\\Users\\user1\\Desktop\\EmployeeManagmet\\EmployeesManagementServer\\EmployeesManagementServer.Data\\EmployeesManagementServer.Data.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user1\\Documents\\רבקי למודים\\.net core\\endCouese\\EmployeesManagementServer\\EmployeesManagementServer.Data\\obj\\",
+      "outputPath": "C:\\Users\\user1\\Desktop\\EmployeeManagmet\\EmployeesManagementServer\\EmployeesManagementServer.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4442,8 +4442,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\user1\\Documents\\רבקי למודים\\.net core\\endCouese\\EmployeesManagementServer\\EmployeesManagementServer.Core\\EmployeesManagementServer.Core.csproj": {
-              "projectPath": "C:\\Users\\user1\\Documents\\רבקי למודים\\.net core\\endCouese\\EmployeesManagementServer\\EmployeesManagementServer.Core\\EmployeesManagementServer.Core.csproj"
+            "C:\\Users\\user1\\Desktop\\EmployeeManagmet\\EmployeesManagementServer\\EmployeesManagementServer.Core\\EmployeesManagementServer.Core.csproj": {
+              "projectPath": "C:\\Users\\user1\\Desktop\\EmployeeManagmet\\EmployeesManagementServer\\EmployeesManagementServer.Core\\EmployeesManagementServer.Core.csproj"
             }
           }
         }

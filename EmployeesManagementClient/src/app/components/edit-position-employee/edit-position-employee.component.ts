@@ -1,5 +1,5 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
@@ -52,6 +52,13 @@ export class EditPositionEmployeeComponent implements OnInit{
     this.employeeId = data.employeeId;
     this.positionId = data.positionId;    
   }
+  validateEntryDate(control: FormControl) {
+    const entryDate = new Date(control.value);
+    if (this.employee && new Date(entryDate) < new Date(this.employee.entryDate)) {
+      return { invalidateEntryDate: true };
+    }
+    return null;
+  }
   ngOnInit(): void {
   
     this._employeeService.getEmployeeById(this.employeeId).subscribe(employee => {
@@ -61,28 +68,15 @@ export class EditPositionEmployeeComponent implements OnInit{
         this.positionEmployee=pe;
         this.EditPositionEmployeeForm = this.formBuilder.group({
           isManagement:[this.positionEmployee.isManagement, Validators.required],
-          entryDate: [this.positionEmployee.entryDate, Validators.required],
+          entryDate: [this.positionEmployee.entryDate,[ this.validateEntryDate.bind(this)]],
         });
       }
     )
     this._positionService.getEmployeePositionsNotAssigned(this.employeeId).subscribe(positions => {
       this.positionlist = positions;
     });
-if( this.EditPositionEmployeeForm)
-    // קריאה לפונקציית האימות בזמן שינוי בתאריך
-    this.EditPositionEmployeeForm.get('entryDate').valueChanges.subscribe(() => {
-      this.validateEntryDate();
-    });
   }
-  validateEntryDate() {
-    const entryDate = this.EditPositionEmployeeForm.get('entryDate').value;
-    if (this.employee && new Date(entryDate) < new Date(this.employee.entryDate)) {
-      this.EditPositionEmployeeForm.get('entryDate').setErrors({ invalidEntryDate: true });
-    } else {
-      this.EditPositionEmployeeForm.get('entryDate').setErrors(null);
-    }
-    console.log(this.EditPositionEmployeeForm,'EditPositionEmployeeForm.valid')
-  }
+
 
   save(): void {
     if (this.EditPositionEmployeeForm.valid) {

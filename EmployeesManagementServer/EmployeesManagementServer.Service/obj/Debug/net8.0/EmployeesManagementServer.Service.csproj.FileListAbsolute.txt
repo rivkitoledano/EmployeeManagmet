@@ -14,3 +14,19 @@ C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesMana
 C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\refint\EmployeesManagementServer.Service.dll
 C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\EmployeesManagementServer.Service.pdb
 C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\ref\EmployeesManagementServer.Service.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\EmployeesManagementServer.Service.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\EmployeesManagementServer.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\EmployeesManagementServer.Service.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\EmployeesManagementServer.Service.AssemblyInfo.cs
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\EmployeesManagementServer.Service.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\EmployeesManagementServer.Service.sourcelink.json
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\EmployeesManagementServer.Service.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\refint\EmployeesManagementServer.Service.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\EmployeesManagementServer.Service.pdb
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\bin\Debug\net8.0\EmployeesManagementServer.Service.deps.json
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\bin\Debug\net8.0\EmployeesManagementServer.Service.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\bin\Debug\net8.0\EmployeesManagementServer.Service.pdb
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\bin\Debug\net8.0\EmployeesManagementServer.Core.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\bin\Debug\net8.0\EmployeesManagementServer.Core.pdb
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\Employee.CF646DBD.Up2Date
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Service\obj\Debug\net8.0\ref\EmployeesManagementServer.Service.dll

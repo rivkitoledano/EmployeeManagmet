@@ -12,13 +12,17 @@ namespace EmployeesManagementServer.Service.Services
     public class PositionEmployeeService : IPositionEmployeeService
     {
         private readonly IPositionEmployeeRepository _positionEmployeeRepository;
-        public PositionEmployeeService(IPositionEmployeeRepository positionEmployeeRepository)
+        private readonly IEmployeeRepository _employeeRepository;
+        public PositionEmployeeService(IPositionEmployeeRepository positionEmployeeRepository, IEmployeeRepository employeeRepository)
         {
             _positionEmployeeRepository = positionEmployeeRepository;
+            _employeeRepository = employeeRepository;
         }
         public async Task<PositionEmployee> AddPositionToEmployeeAsync(int EmployeeId, PositionEmployee positionEmployee)
         {
-            
+            var employee=await _employeeRepository.GetEmployeeByIdAsync(EmployeeId);
+            if (positionEmployee.EntryDate < employee.EntryDate)
+                return null;
             positionEmployee.EmployeeId = EmployeeId;
             return await _positionEmployeeRepository.AddPositionToEmployeeAsync(positionEmployee);
         }

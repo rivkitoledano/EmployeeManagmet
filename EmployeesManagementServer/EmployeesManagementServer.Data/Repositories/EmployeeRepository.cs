@@ -46,7 +46,7 @@ namespace EmployeesManagementServer.Data.Repositories
         }
         public async Task<IEnumerable<Employee>> GetEmployeesAsync()
         {
-            return await _context.Employees.Where(emp=>emp.StatusActive).ToListAsync();
+            return await _context.Employees.ToListAsync();
         }
         public async Task<Employee> UpdateEmployeeAsync(int id, Employee updatedEmployee)
         {

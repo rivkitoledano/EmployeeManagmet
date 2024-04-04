@@ -16,3 +16,21 @@ C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesMana
 C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.pdb
 C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.genruntimeconfig.cache
 C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\ref\EmployeesManagementServer.Data.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\bin\Debug\net8.0\EmployeesManagementServer.Data.deps.json
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\bin\Debug\net8.0\EmployeesManagementServer.Data.runtimeconfig.json
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\bin\Debug\net8.0\EmployeesManagementServer.Data.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\bin\Debug\net8.0\EmployeesManagementServer.Data.pdb
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\bin\Debug\net8.0\EmployeesManagementServer.Core.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\bin\Debug\net8.0\EmployeesManagementServer.Core.pdb
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.AssemblyInfo.cs
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.sourcelink.json
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\Employee.4C92D0B9.Up2Date
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\refint\EmployeesManagementServer.Data.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.pdb
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\EmployeesManagementServer.Data.genruntimeconfig.cache
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Data\obj\Debug\net8.0\ref\EmployeesManagementServer.Data.dll

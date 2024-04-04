@@ -16,16 +16,25 @@
     <div class="form-row">
       <mat-form-field class="form-field">
         <input matInput placeholder="First Name" formControlName="firstName">
+        <mat-error *ngIf="editEmployeeForm.get('firstName').hasError('minlength')">
+          * First Name must be 2 characters long at least.
+        </mat-error>   
       </mat-form-field>
     </div>
     <div class="form-row">
       <mat-form-field class="form-field">
         <input matInput placeholder="Last Name" formControlName="lastName">
+        <mat-error *ngIf="editEmployeeForm.get('lastName').hasError('minlength')">
+          * Last Name must be 2 characters long at least.
+        </mat-error>
       </mat-form-field>
     </div>
     <div class="form-row">
       <mat-form-field class="form-field">
         <input matInput placeholder="Identity" formControlName="identity">
+        <mat-error *ngIf="editEmployeeForm.get('identity').hasError('minlength')">
+          * Identity must be 9 characters long and include just numbers.
+        </mat-error>
       </mat-form-field>
     </div>
     <div class="form-row">
@@ -33,6 +42,19 @@
             <input matInput [matDatepicker]="picker1" formControlName="birthDate" placeholder="Choose a birth date">
             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
             <mat-datepicker #picker1></mat-datepicker>
+            <mat-error *ngIf="validateBirthDate">
+              * Birth date must be at least 18 years in the past.
+            </mat-error>
+          </mat-form-field>
+      </div>
+       <div class="form-row">
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker2" formControlName="entryDate" placeholder="Choose an entry date">
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+            <mat-error *ngIf="validateBirthDate">
+              * Entry date must be at least when age 18 years.
+            </mat-error>
           </mat-form-field>
       </div>
       <div class="form-row">
@@ -42,14 +64,9 @@
             <mat-option [value]="1">Female</mat-option>
           </mat-select>
         </mat-form-field>
+
       </div>
-    <div class="form-row">
-        <mat-form-field>
-            <input matInput [matDatepicker]="picker2" formControlName="entryDate" placeholder="Choose an entry date">
-            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-            <mat-datepicker #picker2></mat-datepicker>
-          </mat-form-field>
-      </div>
+   
       <div class="btn-group" position="group" aria-label="Default button group">
         <button type="button" class="btn btn-outline-dark" (click)="close()">Cancel</button>
         <button type="button" class="btn btn-outline-dark" (click)="save()" [disabled]="!editEmployeeForm.valid">Save</button>

@@ -24,6 +24,7 @@ export class MassageComponent {
   }
 
   onConfirmClick(): void {
+    
     this.dialogRef.close('confirm');
   }
 }

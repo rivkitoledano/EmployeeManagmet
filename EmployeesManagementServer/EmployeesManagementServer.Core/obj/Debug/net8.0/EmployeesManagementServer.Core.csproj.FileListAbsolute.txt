@@ -11,3 +11,16 @@ C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesMana
 C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\refint\EmployeesManagementServer.Core.dll
 C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\EmployeesManagementServer.Core.pdb
 C:\Users\user1\Documents\רבקי למודים\.net core\endCouese\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\ref\EmployeesManagementServer.Core.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\bin\Debug\net8.0\EmployeesManagementServer.Core.deps.json
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\bin\Debug\net8.0\EmployeesManagementServer.Core.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\bin\Debug\net8.0\EmployeesManagementServer.Core.pdb
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\EmployeesManagementServer.Core.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\EmployeesManagementServer.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\EmployeesManagementServer.Core.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\EmployeesManagementServer.Core.AssemblyInfo.cs
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\EmployeesManagementServer.Core.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\EmployeesManagementServer.Core.sourcelink.json
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\EmployeesManagementServer.Core.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\refint\EmployeesManagementServer.Core.dll
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\EmployeesManagementServer.Core.pdb
+C:\Users\user1\Desktop\EmployeeManagmet\EmployeesManagementServer\EmployeesManagementServer.Core\obj\Debug\net8.0\ref\EmployeesManagementServer.Core.dll

@@ -55,7 +55,15 @@ export class EditEmployeeComponent implements OnInit {
     }
     return null;
   }
-  
+  validEntryDate(control: FormControl) {
+    const birthDate = new Date(control.value);
+    const currentDate = new Date();
+    const maxAllowedDate = new Date(birthDate.getFullYear() + 18, birthDate.getMonth(), birthDate.getDate());
+    if (currentDate > maxAllowedDate) {
+      return { invalidEntryDate: true };
+    }
+    return null;
+  }
   // פונקציה זו מבצעת את התקינות שהתאריך כניסת העובד אינו לפני התאריך הנוכחי
   
   ngOnInit(): void {
@@ -68,10 +76,10 @@ export class EditEmployeeComponent implements OnInit {
         this.editEmployeeForm = this.formBuilder.group({
           firstName: [this.updateEmployee.firstName, [Validators.required,Validators.minLength(2)]],
           lastName: [this.updateEmployee.lastName, [Validators.required,Validators.minLength(2)]],
-          identity: [this.updateEmployee.identity, [Validators.required,Validators.minLength(9),Validators.maxLength(9)]],
+          identity: [this.updateEmployee.identity, [Validators.required,Validators.pattern('^[0-9]{9}$')]],
           birthDate: [this.updateEmployee.birthDate,[ Validators.required, this.validateBirthDate.bind(this)]],
           gender: [this.updateEmployee.gender, Validators.required],
-          entryDate: [this.updateEmployee.entryDate, [Validators.required]],
+          entryDate:[this.updateEmployee.entryDate ,this.validEntryDate.bind(this)],
         });
       },
     });

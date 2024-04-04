@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ueIsSkzzqN9Pp/Mj4QG/ZmYw0nWoQPlQTBG2s3mdcyBQ5/xlClRifVo7V0lig3eWuu9CzrsOUf2qyeumejISdA==",
+  "dgSpecHash": "PxRn3V1QIrlU/CA9ehXF3EJrXCyy57/GXy90w4dYyWqgRAe3C2bZm7c/T0ZcF3kodmZd6u6O1rYMgS2dnVDpAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Documents\\רבקי למודים\\.net core\\endCouese\\EmployeesManagementServer\\EmployeesManagementServer.Service\\EmployeesManagementServer.Service.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Desktop\\EmployeeManagmet\\EmployeesManagementServer\\EmployeesManagementServer.Service\\EmployeesManagementServer.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

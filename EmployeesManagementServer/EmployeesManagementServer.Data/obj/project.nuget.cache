@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lssu/munShno4MGgVriKG/6a+ZH6gEwNjBn3+UFlaeEY3997yB5TqvoPt3uW3ay6aeL3c6yF9JHEkh3+3HcmTg==",
+  "dgSpecHash": "FzXbqFNXV3QWR/A6Sy9/mGkqLJwVy6SB2kcd+nAg+UORQo0tC+Pnlm7DT3Rz/KDhb2SkEJ5zBj+nsWFtNSYIBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Documents\\רבקי למודים\\.net core\\endCouese\\EmployeesManagementServer\\EmployeesManagementServer.Data\\EmployeesManagementServer.Data.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Desktop\\EmployeeManagmet\\EmployeesManagementServer\\EmployeesManagementServer.Data\\EmployeesManagementServer.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

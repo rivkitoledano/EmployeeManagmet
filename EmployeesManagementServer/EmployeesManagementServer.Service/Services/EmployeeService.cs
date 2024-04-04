@@ -20,7 +20,7 @@ namespace EmployeesManagementServer.Service.Services
         {
             var existingEmployees = await _employeeRepository.GetEmployeesAsync();
             if (existingEmployees.Any(e=>employee.Identity==e.Identity)|| employee.EntryDate.Day < DateTime.Now.Day||
-                DateTime.Now.Year - employee.BirthDate.Year < 15
+                DateTime.Now.Year - employee.BirthDate.Year < 18
                 ||employee.Identity.Length!=9)
             {
                 return null;
@@ -41,11 +41,19 @@ namespace EmployeesManagementServer.Service.Services
 
         public async Task<IEnumerable<Employee>> GetEmployeesAsync()
         {
-            return await _employeeRepository.GetEmployeesAsync();
+            var allStatusActiveEmployees = await _employeeRepository.GetEmployeesAsync();
+            return allStatusActiveEmployees.Where(e=>e.StatusActive);
         }
 
         public async Task<Employee> UpdateEmployeeAsync(int id, Employee employee)
         {
+            var existingEmployees = await _employeeRepository.GetEmployeesAsync();
+            if (existingEmployees.Any(e => employee.Identity == e.Identity) || employee.EntryDate.Year < employee.BirthDate.Year + 18 ||
+                DateTime.Now.Year - employee.BirthDate.Year < 18
+                || employee.Identity.Length != 9)
+            {
+                return null;
+            }
             return await _employeeRepository.UpdateEmployeeAsync(id, employee);
         }
     }

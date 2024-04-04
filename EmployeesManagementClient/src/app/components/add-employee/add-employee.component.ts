@@ -65,7 +65,7 @@ validateEntryDate(control: FormControl) {
     this.employeeForm = this.formBuilder.group({
       firstName: ['', [Validators.required, Validators.minLength(2)]],
   lastName: ['', [Validators.required, Validators.minLength(2)]],
-  identity: ['', [Validators.required, Validators.minLength(9), Validators.maxLength(9)]],
+  identity: ['', [Validators.required,Validators.pattern('^[0-9]{9}$')]],
   birthDate: ['', [Validators.required, this.validateBirthDate.bind(this)]], // שימוש ב-bind כדי לשמור על ההקשר של 'this'
   gender: ['', Validators.required],
   entryDate: ['', [Validators.required, this.validateEntryDate.bind(this)]], // שימוש ב-bind כדי לשמור על ההקשר של 'this'

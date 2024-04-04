@@ -5,8 +5,9 @@
       <mat-form-field class="form-field">
       <mat-select placeholder="Choose Position" formControlName="positionId">
         <mat-option *ngFor="let position of positionlist" [value]="position.positionId">  {{ position.positionName }}</mat-option>
-      </mat-select>
-    </mat-form-field>
+   </mat-select>
+   <mat-error *ngIf="PositionEmployeeForm.get('positionId').invalid && PositionEmployeeForm.get('positionId').touched"> * Position is Required filed</mat-error>
+ </mat-form-field>
 
     </div>
  
@@ -16,13 +17,17 @@
             <mat-option [value]="true">True</mat-option>
             <mat-option [value]="false">False</mat-option>
           </mat-select>
-        </mat-form-field>
+          <mat-error *ngIf="PositionEmployeeForm.get('isManagement').invalid && PositionEmployeeForm.get('isManagement').touched"> *Is Management  is Required filed</mat-error>
+    </mat-form-field>
+
       </div>
     <div class="form-row">
         <mat-form-field>
             <input matInput [matDatepicker]="picker1" formControlName="entryDate" placeholder="Choose an entry date">
             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
             <mat-datepicker #picker1></mat-datepicker>
+            <mat-error *ngIf="validateEntryDate"> *Entry Date must be after start date </mat-error>
+
           </mat-form-field>
       </div>
       
