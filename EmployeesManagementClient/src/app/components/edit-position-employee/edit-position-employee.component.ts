@@ -63,6 +63,7 @@ export class EditPositionEmployeeComponent implements OnInit{
   
     this._employeeService.getEmployeeById(this.employeeId).subscribe(employee => {
       this.employee = employee;
+      console.log(this.employee)
     });
     this._employeeService.getPositionOfEmployeeById(this.employeeId,this.positionId).subscribe( pe=>{
         this.positionEmployee=pe;
